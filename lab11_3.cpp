@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void mySwap(int &,int &); 
+void mySwap(int &,int &);
 
 int main(){
 	int x,y;
@@ -12,6 +12,13 @@ int main(){
 	mySwap (x,y);
 	cout << "After swapping:\n";
 	cout << "x = " << x << ", y = " << y << "\n";
-	
+
 	return 0;
+}
+
+void mySwap(int &x,int &y){
+int a=x;
+int b=y;
+x=b;
+y=a;
 }
